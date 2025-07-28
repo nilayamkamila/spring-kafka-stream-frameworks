@@ -18,9 +18,9 @@ openssl x509 -req -CA ca.crt -CAkey ca.key -in kafka-server.csr -out kafka-serve
 # === Truststore ===
 /Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home/bin/keytool -import -alias CARoot -keystore kafka.server.truststore.jks -file ca.crt -storepass password -noprompt
 # === Credential files for Kafka config ===
-echo password > keystore_certs
-echo password > key_certs
-echo password > truststore_certs
+echo password > keystore_creds
+echo password > key_creds
+echo password > truststore_creds
 echo "✅ Certificates and keystores generated in kafka-certs/"
 echo "You can now use these credentials in your Kafka configuration."
 cp ../client.properties .
@@ -36,3 +36,4 @@ cp ../client.properties .
 #echo "- ca.pem"
 #echo "- client.pem"
 #echo "- client.key"
+cd ..

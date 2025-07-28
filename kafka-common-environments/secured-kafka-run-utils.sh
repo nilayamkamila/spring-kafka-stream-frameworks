@@ -1,3 +1,4 @@
+./generate-configure-common-certs.sh
 docker-compose -f docker-compose-secured.yaml down
 docker-compose -f docker-compose-secured.yaml up -d
 KAFKA_CONTAINER_ID=$(docker ps --filter "name=kafka-common-environments-kafka" --format "{{.ID}}")

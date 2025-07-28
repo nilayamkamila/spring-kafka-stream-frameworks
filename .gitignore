@@ -1,0 +1,91 @@
+# ===== Java =====
+*.class
+*.jar
+*.war
+*.ear
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+release.properties
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+.gradle-cache/
+buildSrc/.gradle/
+
+# IntelliJ / Eclipse
+*.iml
+.idea/
+*.ipr
+*.iws
+*.bak
+*.swp
+*.swo
+*.tmp
+*.log
+.project
+.classpath
+.settings/
+.vscode/
+
+# ===== Python =====
+*.pyc
+*.pyo
+__pycache__/
+*.egg-info/
+dist/
+build/
+.eggs/
+.mypy_cache/
+.pytest_cache/
+.cache/
+.tox/
+coverage.xml
+*.cover
+htmlcov/
+.dmypy.json
+.pyre/
+.pytype/
+
+# Virtual environments (leave venv/ tracked)
+.venv/
+ENV/
+env/
+ENV*/
+env*/
+.Python
+
+# ===== OS / Misc =====
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+
+# ===== IDE Configs =====
+.vscode/
+.idea/
+*.code-workspace
+
+# ===== Docker / Compose =====
+*.pid
+*.sock
+docker-compose.override.yml
+
+# ===== Jupyter Notebooks =====
+.ipynb_checkpoints/
+
+# ===== Certificates / Secrets =====
+*.jks
+*.pem
+*.crt
+*.key
+*.srl
+secrets/
+
+# ===== CI / GitHub =====
+/.github/workflows/*.log
